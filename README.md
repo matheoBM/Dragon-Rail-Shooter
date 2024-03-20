@@ -13,3 +13,9 @@ The terrain tool in Unity 3D allows you to create and model your own terrains. W
   <img src="https://github.com/matheoBM/Dragon-Rail-Shooter/assets/51725829/249e354c-897e-4ec3-92b8-e14a0dfa628e" width="540">
 </p>
 
+### Timeline 
+The timeline tool allows the user to record changes in position and rotation of a game object and use it as an animation.
+
+<p align="center">
+  <img width="540" src="https://github.com/matheoBM/Dragon-Rail-Shooter/assets/51725829/c3931a27-fcfa-4648-8cc2-6ae38ebf229e">
+</p>

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float movementSpeed;
+    [Header("General Settings")]
+    [Tooltip("Horizontal and vertical movement speed")][SerializeField] float movementSpeed = 61;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 10f;
 
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -10f;
     [SerializeField] float controlYawFactor = 0.8f;
     [SerializeField] float controlRollFactor = -15f;
+
+    [SerializeField] ParticleSystem particles;
 
     float horizontalMovement, verticalMovement;
 
@@ -26,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessShooting();
     }
 
     void ProcessRotation()
@@ -57,5 +61,24 @@ public class PlayerController : MonoBehaviour
             y = newYPos,
             z = transform.localPosition.z
         };
+    }
+
+    void ProcessShooting() 
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            SetEmissionActive(true);
+        }
+        else
+        {
+            SetEmissionActive(false);
+        }
+
+    }
+
+    private void SetEmissionActive(bool isActive)
+    {
+        var emissionModule = particles.emission;
+        emissionModule.enabled = isActive;
     }
 }

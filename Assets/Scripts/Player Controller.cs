@@ -6,15 +6,18 @@ public class PlayerController : MonoBehaviour
 {
     [Header("General Settings")]
     [Tooltip("Horizontal and vertical movement speed")][SerializeField] float movementSpeed = 61;
-    [SerializeField] float xRange = 10f;
-    [SerializeField] float yRange = 10f;
+    [Tooltip("Movement limit on the horizontal axis")][SerializeField] float xRange = 10f;
+    [Tooltip("Movement limit on the vertical axis")][SerializeField] float yRange = 10f;
 
-    [SerializeField] float positionPitchFactor = -1.5f;
-    [SerializeField] float controlPitchFactor = -10f;
-    [SerializeField] float controlYawFactor = 0.8f;
-    [SerializeField] float controlRollFactor = -15f;
+    [Header("Screen positioning based tuning")]
+    [Tooltip("Factor to control position impact on pitch")][SerializeField] float positionPitchFactor = -1.5f;
+    [Tooltip("Factor to control movement impact on pitch")][SerializeField] float positionYawFactor = 0.8f;
 
-    [SerializeField] ParticleSystem particles;
+    [Header("Control based tuning")]
+    [Tooltip("Factor to control movement impact on pitch")][SerializeField] float controlPitchFactor = -10f;
+    [Tooltip("Factor to control movement impact on pitch")][SerializeField] float controlRollFactor = -15f;
+
+    [Tooltip("Fire")][SerializeField] ParticleSystem dragonFire;
 
     float horizontalMovement, verticalMovement;
 
@@ -35,7 +38,7 @@ public class PlayerController : MonoBehaviour
     void ProcessRotation()
     {
         float pitch = transform.localPosition.y * positionPitchFactor + verticalMovement * controlPitchFactor;
-        float yaw = transform.localPosition.x * controlYawFactor;
+        float yaw = transform.localPosition.x * positionYawFactor;
         float roll = horizontalMovement * controlRollFactor;
 
         Debug.Log("Rotation: " + Quaternion.Euler(pitch, yaw, roll));
@@ -78,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
     private void SetEmissionActive(bool isActive)
     {
-        var emissionModule = particles.emission;
+        var emissionModule = dragonFire.emission;
         emissionModule.enabled = isActive;
     }
 }

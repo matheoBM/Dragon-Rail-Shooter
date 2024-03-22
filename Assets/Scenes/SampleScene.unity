@@ -711,6 +711,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2184571700623390886, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
   m_PrefabInstance: {fileID: 4458519753748597848}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1725640512 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+  m_PrefabInstance: {fileID: 4458519753748597848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1762642686
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +823,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 1.9
       objectReference: {fileID: 0}
@@ -833,6 +842,14 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.scalar
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4329737580326958475, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 1725640512}
+    - target: {fileID: 4329737580326958475, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: dragonFire
+      value: 
+      objectReference: {fileID: 1725640512}
     - target: {fileID: 8588678711132537398, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
       propertyPath: m_Name
       value: Dragon

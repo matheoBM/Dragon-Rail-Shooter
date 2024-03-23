@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collision detected: "+ this.name + " " + collision.gameObject.name);
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter(Collider other)

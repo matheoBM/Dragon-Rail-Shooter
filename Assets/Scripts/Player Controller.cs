@@ -41,7 +41,6 @@ public class PlayerController : MonoBehaviour
         float yaw = transform.localPosition.x * positionYawFactor;
         float roll = horizontalMovement * controlRollFactor;
 
-        Debug.Log("Rotation: " + Quaternion.Euler(pitch, yaw, roll));
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
@@ -56,7 +55,6 @@ public class PlayerController : MonoBehaviour
         newXPos = Mathf.Clamp(newXPos, -xRange, xRange);
         newYPos = Mathf.Clamp(newYPos, -yRange, yRange);
 
-        Debug.Log("Vertical Movement: " + verticalMovement);
 
         transform.localPosition = new Vector3
         {

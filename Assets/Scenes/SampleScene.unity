@@ -437,7 +437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544483240}
   m_LocalRotation: {x: 0, y: -0.258819, z: 0, w: 0.9659259}
-  m_LocalPosition: {x: 224.6, y: -6.8, z: 107.6}
+  m_LocalPosition: {x: 224.6, y: -6, z: 107.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1022,7 +1022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795273c3c50fb8e4cb1664b8df59fce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reloadTime: 1
+  reloadTime: 0.5
+  explosionParticles: {fileID: 6179405306146354623}
 --- !u!65 &4458519753748597852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1081,7 +1082,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: TrailModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: NoiseModule.damping
@@ -1093,7 +1106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: NoiseModule.frequency
-      value: 1.6
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: NoiseModule.separateAxes
@@ -1101,19 +1114,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 5.1
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: TrailModule.textureScale.x
+      value: 1.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: TrailModule.textureScale.y
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: NoiseModule.strength.scalar
-      value: 1.77
+      value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 220.43
+      value: 360.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: InitialModule.startColor.minMaxState
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.atime0
@@ -1259,5 +1292,10 @@ PrefabInstance:
 --- !u!4 &6179405306146354621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8901949487420354779, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
+  m_PrefabInstance: {fileID: 6179405306146354620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6179405306146354623 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 98971220334701615, guid: f4aa6468be6ff144aa8717a4e2dc89e7, type: 3}
   m_PrefabInstance: {fileID: 6179405306146354620}
   m_PrefabAsset: {fileID: 0}

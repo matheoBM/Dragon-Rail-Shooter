@@ -6,10 +6,11 @@ public class EnemyCollision : MonoBehaviour
 {
     [Header("VFX")]
     [SerializeField] GameObject explosionParticles;
+    [SerializeField] GameObject hitParticles;
     [SerializeField] Transform parentTransform;
 
     [Header("Scoring")]
-    [SerializeField] int health = 50;
+    [SerializeField] int health = 40;
     [SerializeField] int hitPoint = 10;
     
 
@@ -33,6 +34,8 @@ public class EnemyCollision : MonoBehaviour
     {
         health -= hitPoint;
         scoreBoard.IncreaseScore(hitPoint);
+        GameObject hitVFX = Instantiate(hitParticles, transform.position, Quaternion.identity);
+        hitVFX.transform.parent = parentTransform;
         Debug.Log("Damage: " + hitPoint.ToString());
     }
 

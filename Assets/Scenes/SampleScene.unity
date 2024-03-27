@@ -711,6 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticles: {fileID: 4977530114620245912, guid: 2e143facb131f0d4a9798d706cebef26, type: 3}
+  hitParticles: {fileID: 4977530114620245912, guid: 0b1046a09e54de443a3676fdced07c75, type: 3}
   parentTransform: {fileID: 0}
   health: 50
   hitPoint: 10
@@ -897,8 +898,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticles: {fileID: 4977530114620245912, guid: 2e143facb131f0d4a9798d706cebef26, type: 3}
+  hitParticles: {fileID: 4977530114620245912, guid: 0b1046a09e54de443a3676fdced07c75, type: 3}
   parentTransform: {fileID: 640666449}
-  health: 50
+  health: 30
   hitPoint: 10
 --- !u!136 &1445035097
 CapsuleCollider:
@@ -1169,8 +1171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticles: {fileID: 4977530114620245912, guid: 2e143facb131f0d4a9798d706cebef26, type: 3}
+  hitParticles: {fileID: 4977530114620245912, guid: 0b1046a09e54de443a3676fdced07c75, type: 3}
   parentTransform: {fileID: 640666449}
-  health: 50
+  health: 40
   hitPoint: 10
 --- !u!136 &1678173797
 CapsuleCollider:
@@ -1518,8 +1521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticles: {fileID: 4977530114620245912, guid: 2e143facb131f0d4a9798d706cebef26, type: 3}
+  hitParticles: {fileID: 4977530114620245912, guid: 0b1046a09e54de443a3676fdced07c75, type: 3}
   parentTransform: {fileID: 640666449}
-  health: 50
+  health: 20
   hitPoint: 10
 --- !u!136 &2025379152
 CapsuleCollider:

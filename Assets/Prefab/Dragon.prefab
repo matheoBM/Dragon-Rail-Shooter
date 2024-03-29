@@ -1608,7 +1608,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4154875963535597340}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 79b50b34e44b5fd4db1cdc9535a3c86b, type: 3}
   m_Controller: {fileID: 9100000, guid: af2813e0219667e468540bacc5e6eb04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -3722,8 +3722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 61
-  xRange: 40
-  yRange: 20
+  xRange: 35
+  yRange: 24
   positionPitchFactor: -1.5
   positionYawFactor: 0.8
   controlPitchFactor: -10
@@ -3762,8 +3762,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 41.757698, y: 11.750075, z: 24.38615}
-  m_Center: {x: -1.2192154, y: 15.976643, z: -0.8170357}
+  m_Size: {x: 40.29113, y: 7.8583794, z: 23.310146}
+  m_Center: {x: -0.7931671, y: 17.922491, z: -0.58214}
 --- !u!54 &8376829765862185868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4266,12 +4266,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 2184571700623390886}
     m_Modifications:
     - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
       propertyPath: CollisionModule.type
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
+      propertyPath: ShapeModule.arc.mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
       propertyPath: CollisionModule.enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -4287,7 +4299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 12
+      value: 24.3
       objectReference: {fileID: 0}
     - target: {fileID: 4907442254201335546, guid: cd0d9546494a8be42b0c0a1dce842c63, type: 3}
       propertyPath: InitialModule.startLifetime.scalar

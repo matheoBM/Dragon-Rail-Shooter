@@ -7,7 +7,6 @@ public class EnemyCollision : MonoBehaviour
     [Header("VFX")]
     [SerializeField] GameObject explosionParticles;
     [SerializeField] GameObject hitParticles;
-    [SerializeField] Transform parentTransform;
 
     [Header("Scoring")]
     [SerializeField] int health = 40;
@@ -15,9 +14,16 @@ public class EnemyCollision : MonoBehaviour
     
 
     ScoreBoard scoreBoard;
+    GameObject parentGameObject;
 
     void Start()
     {
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
+        Debug.Log(parentGameObject);
+        if (parentGameObject == null)
+        {
+            Debug.LogWarning("No object for spawning particles was created");
+        }
         scoreBoard = FindObjectOfType<ScoreBoard>();
         AddRigidbody();
     }
@@ -42,14 +48,14 @@ public class EnemyCollision : MonoBehaviour
         health -= hitPoint;
         scoreBoard.IncreaseScore(hitPoint);
         GameObject hitVFX = Instantiate(hitParticles, transform.position, Quaternion.identity);
-        hitVFX.transform.parent = parentTransform;
+        hitVFX.transform.parent = parentGameObject.transform;
         Debug.Log("Damage: " + hitPoint.ToString());
     }
 
     void KillEnemy()
     {
         GameObject explosion = Instantiate(explosionParticles, transform.position, Quaternion.identity);
-        explosion.transform.parent = parentTransform;
+        explosion.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 }

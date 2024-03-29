@@ -47,7 +47,9 @@ public class EnemyCollision : MonoBehaviour
     {
         health -= hitPoint;
         scoreBoard.IncreaseScore(hitPoint);
-        GameObject hitVFX = Instantiate(hitParticles, transform.position, Quaternion.identity);
+        Vector3 hitPosition = transform.position;
+        hitPosition.y += 15;
+        GameObject hitVFX = Instantiate(hitParticles, hitPosition, Quaternion.identity);
         hitVFX.transform.parent = parentGameObject.transform;
         Debug.Log("Damage: " + hitPoint.ToString());
     }

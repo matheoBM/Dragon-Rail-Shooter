@@ -2726,7 +2726,7 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 5964550273067686209, guid: aec6d0880f1d27d4981f57865aad3042, type: 2}
+  - key: {fileID: 6212071427031952571, guid: aec6d0880f1d27d4981f57865aad3042, type: 2}
     value: {fileID: 544483242}
   m_ExposedReferences:
     m_References: []
@@ -7790,7 +7790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7159003678380701026, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: -16.4
       objectReference: {fileID: 0}
     - target: {fileID: 7159003678380701026, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7823,6 +7823,18 @@ PrefabInstance:
     - target: {fileID: 7159003678380701026, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 359
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178196229570480674, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178196229570480674, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178196229570480674, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

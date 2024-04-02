@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyCollision : MonoBehaviour
 {
     [Header("VFX")]
-    [SerializeField] GameObject explosionParticles;
+    [SerializeField] GameObject deathFX;
     [SerializeField] GameObject hitParticles;
 
     [Header("Scoring")]
@@ -56,7 +56,7 @@ public class EnemyCollision : MonoBehaviour
 
     void KillEnemy()
     {
-        GameObject explosion = Instantiate(explosionParticles, transform.position, Quaternion.identity);
+        GameObject explosion = Instantiate(deathFX, transform.position, Quaternion.identity);
         explosion.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }

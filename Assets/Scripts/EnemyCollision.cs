@@ -11,6 +11,7 @@ public class EnemyCollision : MonoBehaviour
     [Header("Scoring")]
     [SerializeField] int health = 40;
     [SerializeField] int hitPoint = 10;
+    [SerializeField] int scorePoints = 10;
     
 
     ScoreBoard scoreBoard;
@@ -46,7 +47,6 @@ public class EnemyCollision : MonoBehaviour
     void ProecessHit()
     {
         health -= hitPoint;
-        scoreBoard.IncreaseScore(hitPoint);
         Vector3 hitPosition = transform.position;
         hitPosition.y += 15;
         GameObject hitVFX = Instantiate(hitParticles, hitPosition, Quaternion.identity);
@@ -56,6 +56,7 @@ public class EnemyCollision : MonoBehaviour
 
     void KillEnemy()
     {
+        scoreBoard.IncreaseScore(scorePoints);
         GameObject explosion = Instantiate(deathFX, transform.position, Quaternion.identity);
         explosion.transform.parent = parentGameObject.transform;
         Destroy(gameObject);

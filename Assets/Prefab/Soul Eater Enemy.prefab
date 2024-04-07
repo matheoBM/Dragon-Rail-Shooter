@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6380993870665718559}
   - component: {fileID: 1476970901443993224}
-  - component: {fileID: 6101670753276225352}
+  - component: {fileID: 6747352112888584766}
   m_Layer: 0
   m_Name: Soul Eater Enemy
   m_TagString: Untagged
@@ -48,9 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4977530114620245912, guid: 2e143facb131f0d4a9798d706cebef26, type: 3}
   hitParticles: {fileID: 4977530114620245912, guid: 0b1046a09e54de443a3676fdced07c75, type: 3}
-  health: 40
+  health: 10
   hitPoint: 10
---- !u!95 &6101670753276225352
+  scorePoints: 10
+--- !u!95 &6747352112888584766
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ Transform:
   - {fileID: 4215093730261588500}
   - {fileID: 1540497235806772236}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 330, z: 360}
 --- !u!95 &5850814436983867538
 Animator:
@@ -259,6 +259,30 @@ PrefabInstance:
     - target: {fileID: 2184571700623390886, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616434923109144039, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7087393199722030494, guid: 54421d54d5adbba49845e9789578f93a, type: 3}
       propertyPath: m_Size.x

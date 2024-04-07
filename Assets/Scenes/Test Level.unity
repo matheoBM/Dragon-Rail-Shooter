@@ -5072,12 +5072,28 @@ PrefabInstance:
       value: Player Rig
       objectReference: {fileID: 0}
     - target: {fileID: 3422361620425486669, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422361620425486669, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3422361620425486669, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422361620425486669, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422361620425486669, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422361620425486669, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5051941113787078053, guid: 8b45cfe1122209b4885403fbfee2e4e9, type: 3}
       propertyPath: m_Enabled

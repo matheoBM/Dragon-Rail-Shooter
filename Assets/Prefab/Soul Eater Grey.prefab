@@ -1947,7 +1947,7 @@ Transform:
   m_Children:
   - {fileID: 7952999090128029515}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2765308810457018183
 MonoBehaviour:
@@ -1963,8 +1963,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4977530114620245912, guid: 2e143facb131f0d4a9798d706cebef26, type: 3}
   hitParticles: {fileID: 4977530114620245912, guid: 0b1046a09e54de443a3676fdced07c75, type: 3}
-  health: 40
+  health: 50
   hitPoint: 10
+  scorePoints: 50
 --- !u!95 &6982197495935343472
 Animator:
   serializedVersion: 5
